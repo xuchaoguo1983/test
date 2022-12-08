@@ -1,0 +1,19 @@
+server:
+  port: 8078
+  servlet:
+    context-path: /aidraw-server
+  address: 0.0.0.0
+  tomcat:
+    min-spare-threads: 10
+    max-threads: 128
+
+app:
+  # 限流器配置
+  rateLimiter:
+    enabled: false
+  # MQ异步任务配置
+  mq:
+    jobQueueTTL: 60
+    jobResponseTTL: 60
+    detectFaceConcurrency: 1-1
+    fusionFaceConcurrency: 10-10
