@@ -1,5 +1,5 @@
 server:
-  port: 8078
+  port: 8178
   servlet:
     context-path: /aidraw-server
   address: 0.0.0.0
